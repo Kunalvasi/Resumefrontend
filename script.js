@@ -29,7 +29,7 @@ async function sendMessage() {
 
     try {
         // Send request to backend
-        const response = await fetch("https://resumebackend-1-gzp6.onrender.com/api/v1/resume", {
+        const response = await fetch("http://localhost:3000/api/v1/resume", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message })
